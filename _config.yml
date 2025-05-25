@@ -1,0 +1,9 @@
+title: Ashenara
+logo: /assets/img/logo.png
+description: Test website
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-minimal
+domain: ashenara.github.io
+url: https://ashenara.github.io
+baseurl: /ashenara/github.io/
