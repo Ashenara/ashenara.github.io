@@ -6,4 +6,4 @@ google_analytics:
 theme: jekyll-theme-minimal
 domain: ashenara.github.io
 url: https://ashenara.github.io
-baseurl: /ashenara/github.io/
+baseurl: ""
