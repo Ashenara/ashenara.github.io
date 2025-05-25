@@ -31,9 +31,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  ashenara
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+# theme: minima
+# plugins:
+#  - jekyll-feed
   
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
