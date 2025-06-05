@@ -4,3 +4,20 @@
   1. Head over to https://realfavicongenerator.net/ to add your own favicons.
   2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
 {% endcomment %}
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!--Add JQuery-->
+
+{%- if page.datatable == true -%}
+  <link href="https://cdn.datatables.net/v/dt/dt-2.3.1/datatables.min.css" rel="stylesheet" integrity="sha384-euvbLDizNhjdB+SK/Ai+GY3WCCHaDJM1tnnh2IqvUY9zjhlo21JkywSg8X5hlMY8" crossorigin="anonymous">
+  <script src="https://cdn.datatables.net/v/dt/dt-2.3.1/datatables.min.js" integrity="sha384-1LmfH5u7+DRwux/q4YYqAi+OjwkIVYJdPQijPS9S28cj8AeFnpNCkSVlZgvRdOzb" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready( function () {
+    $('table.display').DataTable();      
+      // Initialize the DataTable
+      //new DataTable('#mytable', {
+      //  ordering : true, // Disable ordering
+      //});
+    });
+    
+  </script>
+  {% endif %}
