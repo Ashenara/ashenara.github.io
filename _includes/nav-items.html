@@ -1,0 +1,14 @@
+<div class="nav-items">
+  {%- for path in include.paths -%}
+    {%- assign hyperpage = site.pages | where: "path", path | first -%}
+    {%- if hyperpage.title %}
+      <a class="nav-item" href="{{ hyperpage.url | relative_url }}">{{ hyperpage.title | escape }}</a>
+    {%- endif -%}
+  {%- endfor %}
+  <span class="nav-item" style="margin-left:1em;">
+    <label class="toggle-switch" style="vertical-align:middle;">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider"></span>
+    </label>
+  </span>
+</div>
